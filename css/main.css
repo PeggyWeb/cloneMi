@@ -1,0 +1,68 @@
+*{box-sizing:border-box;}
+html,body{margin:0;padding:0;font-family:"Microsoft Yahei";}
+ul{list-style: none;margin:0;padding-left:0;}
+input,select{margin:0;}
+a{text-decoration:none;color:inherit;}
+@font-face {
+    font-family: 'iconfont';  /* project id 374170 */
+    src: url('http://at.alicdn.com/t/font_9912el1d29be29.eot');
+    src: url('http://at.alicdn.com/t/font_9912el1d29be29.eot?#iefix') format('embedded-opentype'),
+    url('http://at.alicdn.com/t/font_9912el1d29be29.woff') format('woff'),
+    url('http://at.alicdn.com/t/font_9912el1d29be29.ttf') format('truetype')
+}
+.iconfont{
+    font-family:"iconfont" !important;
+    font-size:16px;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.hide{display:none;}
+.show{display:block;}
+.fl{float: left;}
+.fr{float: right;}
+.iconfont{margin:0 2px;font-size:inherit}
+.corange{color:#ff6700}
+header {height:40px;line-height:40px;font-size:12px;background-color:#333;color:#b0b0b0;}
+.container{width:1226px;margin:0 auto;}
+.topbar-nav {max-width:800px;display:inline-block}
+.topbar-nav a{border-right:1px solid #666;padding:0 6px;}
+.topbar-nav a:last-of-type{border-left:0;}
+.topbar-info {}
+.topbar-info a:not(:last-child){border-right:1px solid #666;padding:0 6px;}
+.topbar-cart {margin-left:10px;width:120px;text-align:center}
+.topbar-cart a {display:block;height:40px;background-color:#424242;}
+.message{padding:0 5px}
+.site-header {height:100px;}
+.header-logo {display:inline-block;margin-top:22px;vertical-align:top;}
+.logo{display:inline-block;width:55px;height:55px; background: url(../img/mi-logo.png) no-repeat center;background-color:#ff6700;}
+.header-nav { display:inline-block;vertical-align:text-top; }
+.nav-list {font-size:16px;vertical-align:top;line-height: 100px;}
+.nav-item {display:inline-block;}
+.nav-item a {padding:0 10px;}
+.nav-item a:hover{ color:#ff6700; }
+.header-search { display: inline-block;margin-top:20px; }
+.search-from {}
+.search-text { width:245px;height: 50px;padding-right:10px;border:1px solid #ccc;vertical-align:top;}
+.search-btn { width:52px;height: 50px;margin:0;border:1px solid #ccc;text-align:center;border-left:0;vertical-align:top; }
+.header-nav-menu {display:none;border-top:1px solid #ccc;box-shadow:0 3px 4px #bbb;z-index:4;}
+.header-nav-menu.children-list {font-size:12px;}
+.header-nav-menu.children-list li {position:relative;display: inline-block;width:204px;padding:40px 0;vertical-align:top;text-align:center;}
+.header-nav-menu.children-list li::before{content:"";position:absolute;left:0;top:40px;display:inline-block;height:100px;width:1px;background-color:#ccc;}
+.flags{position:absolute;top:-1px;width:100%;margin:0;text-align:center;}
+.flag{display:inline-block;padding:2px 20px;border:1px solid #ff6700;color: #ff6700;}
+.title {height:34px;line-height:50px;}
+.price {color:#ff6700;}
+.slider-swipe {  }
+.slider-swipe div {  }
+.category{position:relative;width:234px;height:460px;padding:20px 0;font-size:14px;background-color:rgba(0,0,0,.6);z-index:3;}
+.category-item {}
+.category-item>a {position:relative;display:block;height:42px;line-height:42px;padding-left:30px;color:#fff;}
+.category-item>a:hover{background-color:#ff6700;}
+.category-item>a:hover +.children{display: block;}
+.category-item>a>span { position:absolute;right:20px;font-size:16px;color:#ccc;}
+.category-item .children {display:none;position:absolute;left:234px;top:0;z-index:4;height:460px;border:1px solid #aaa;box-shadow:0 8px 20px rgba(0,0,0,0.18);background-color:#fff;color:#888;}
+.category-item .children-list {width:256px;}
+.star-goods {height:77px;line-height:77px;padding-left:20px;}
+.link {  }
+.link img {vertical-align:middle;}
+.text {  }
