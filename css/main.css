@@ -66,3 +66,18 @@ header {height:40px;line-height:40px;font-size:12px;background-color:#333;color:
 .link {  }
 .link img {vertical-align:middle;}
 .text {  }
+.home-server{}
+.home-server-item{}
+.home-server-item:first-of-type{width:234px;}
+.home-server-icon{position:relative;display:inline-block;width:70px;height:82px;padding-top:20px;font-size:14px;text-align:center;color:#ddd;background:#5f5750;}
+.home-server-icon>span{display: block;font-size: 20px;}
+.home-server-icon::before,.home-server-icon::after{position:absolute;content:"";background-color:#665e57;}
+.home-server-icon::after{top:6px;left:0;width:1px;height:70px;}
+.home-server-icon::before{top:-1px;left:6px;width:64px;height:1px;}
+
+
+
+
+
+
+
