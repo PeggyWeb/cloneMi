@@ -3,12 +3,13 @@ html,body{margin:0;padding:0;font-family:"Microsoft Yahei";}
 ul{list-style: none;margin:0;padding-left:0;}
 input,select{margin:0;}
 a{text-decoration:none;color:inherit;}
+p{margin:0;}
 @font-face {
     font-family: 'iconfont';  /* project id 374170 */
-    src: url('http://at.alicdn.com/t/font_9912el1d29be29.eot');
-    src: url('http://at.alicdn.com/t/font_9912el1d29be29.eot?#iefix') format('embedded-opentype'),
-    url('http://at.alicdn.com/t/font_9912el1d29be29.woff') format('woff'),
-    url('http://at.alicdn.com/t/font_9912el1d29be29.ttf') format('truetype')
+    src: url('http://at.alicdn.com/t/font_tba8ii9mp9zfr.eot');
+    src: url('http://at.alicdn.com/t/font_tba8ii9mp9zfr.eot?#iefix') format('embedded-opentype'),
+    url('http://at.alicdn.com/t/font_tba8ii9mp9zfr.woff') format('woff'),
+    url('http://at.alicdn.com/t/font_tba8ii9mp9zfr.ttf') format('truetype')
 }
 .iconfont{
     font-family:"iconfont" !important;
@@ -32,7 +33,7 @@ header {height:40px;line-height:40px;font-size:12px;background-color:#333;color:
 .topbar-cart {margin-left:10px;width:120px;text-align:center}
 .topbar-cart a {display:block;height:40px;background-color:#424242;}
 .message{padding:0 5px}
-.site-header {height:100px;}
+.site-header {}
 .header-logo {display:inline-block;margin-top:22px;vertical-align:top;}
 .logo{display:inline-block;width:55px;height:55px; background: url(../img/mi-logo.png) no-repeat center;background-color:#ff6700;}
 .header-nav { display:inline-block;vertical-align:text-top; }
@@ -66,17 +67,27 @@ header {height:40px;line-height:40px;font-size:12px;background-color:#333;color:
 .link {  }
 .link img {vertical-align:middle;}
 .text {  }
-.home-server{}
-.home-server-item{}
-.home-server-item:first-of-type{width:234px;}
-.home-server-icon{position:relative;display:inline-block;width:70px;height:82px;padding-top:20px;font-size:14px;text-align:center;color:#ddd;background:#5f5750;}
+.home-server{margin-top:14px;}
+.home-server-item{display: inline-block;margin-right:14px;vertical-align: top;}
+.home-server-item:last-child{margin-right:0;}
+.home-server-item>a>img{width: 316px;height: 170px;}
+.home-server-item:first-of-type{width:234px;padding:3px;background:#5f5750;}
+.home-server-icon{position:relative;display:inline-block;width:76px;height:82px;padding-top:20px;font-size:14px;text-align:center;color:#ddd;}
 .home-server-icon>span{display: block;font-size: 20px;}
 .home-server-icon::before,.home-server-icon::after{position:absolute;content:"";background-color:#665e57;}
 .home-server-icon::after{top:6px;left:0;width:1px;height:70px;}
 .home-server-icon::before{top:-1px;left:6px;width:64px;height:1px;}
-
-
-
+.home-server-icon:first-of-type::before,
+.home-server-icon:first-of-type::after,.home-server-icon:nth-child(4)::before,.home-server-icon:nth-child(4)::after{background-color:transparent;}
+.m-star-goods{}
+.section-title{font-weight:100;}
+.star-goods-list{font-size:14px;}
+.star-goods-list-item{width:234px;height:340px;
+    text-align: center;}
+.img-wrap>img{width:160px;height:160px;}
+.good-title{margin:0;font-size:14px;font-weight: 400;}
+.good-desc{margin:5px 0 10px 0;font-size:12px;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;color:#b0b0b0;}
+.good-price{color:#ff6709;}
 
 
 
