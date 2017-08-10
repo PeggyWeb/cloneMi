@@ -1,0 +1,35 @@
+{
+  "status":1,
+  "result":{
+    "totalMoney":59,
+    "list":[
+      {
+        "productId":"6000121441",
+        "productNeme":"小米4x",
+        "productPrice":1009,
+        "productQuentity":8,
+        "productImage":"img/mitu-80.jpg",
+        "parts":[
+          {
+            "partId":"10001",
+            "partName":"屏保膜"
+          }
+        ]
+      },
+      {
+        "productId":"6000121443",
+        "productNeme":"小米5x",
+        "productPrice":1555,
+        "productQuentity":6,
+        "productImage":"img/mitu-80.jpg",
+        "parts":[
+          {
+            "partId":"10001",
+            "partName":"手机壳"
+          }
+        ]
+      }
+    ]
+  },
+  "message":""
+}

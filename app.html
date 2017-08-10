@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>小米商城</title>
+
+
+    <style>
+        .cart-list{display:table;}
+        .cart-list-header{display:table-row;height:40px;line-height:40px;}
+        .cart-list-header li{display:table-cell;}
+        .cart-list-body{display:table-row-group;}
+        .cart-item{display:table-row;}
+        .cart-item div{display:table-cell;}
+    </style>
+</head>
+
+<body>
+
+<div class="cart-list" id="cart">
+    <h2>{{title}}</h2>
+    <ul class="cart-list-header">
+        <li>商品信息</li>
+        <li>商品金额</li>
+        <li>商品数量</li>
+        <li>总金额</li>
+        <li>编辑</li>
+    </ul>
+    <ul class="cart-list-body">
+        <li class="cart-item">
+            <div class="cart-item-grid">111<a href="javascript:void(0)"></a></div>
+            <div class="cart-item-grid"><img src="img/mitu-80.jpg" /></div>
+            <div class="cart-item-grid"><a href="javascript:void(0)">小米</a></div>
+            <div class="cart-item-grid"><dl><dd>屏保膜</dd></dl></div>
+            <div class="cart-item-grid"><a href="javascript:void(0)">删除</a></div>
+        </li>
+        <li class="cart-item">
+            <div class="cart-item-grid">111<a href="javascript:void(0)"></a></div>
+            <div class="cart-item-grid"><img src="img/mitu-80.jpg" /></div>
+            <div class="cart-item-grid"><a href="javascript:void(0)">小米</a></div>
+            <div class="cart-item-grid"><dl><dd>屏保膜</dd></dl></div>
+            <div class="cart-item-grid"><a href="javascript:void(0)">删除</a></div>
+        </li>
+    </ul>
+    <ul class="cart-list-footer"></ul>
+</div>
+
+<script src="https://unpkg.com/vue"></script>
+<script>
+    var vm = new Vue({
+        el:"#cart",
+        data:{
+            title:"购物车",
+            totalMoney:0,
+            productList:[]
+        },
+        filters:{
+
+        },
+        mounted:function(){
+            this.cartView();
+        },
+        methods: {
+            cartView: function () {
+                let _this=this;
+                this.$http.get("data/demo.json",{"id":123}).then(function(res){
+                    _this.productList = res.result.list;
+                    _this.totalMoney = res.result.totalMoney;
+                });
+            }
+        }
+    });
+</script>
+</body>
+</html>
